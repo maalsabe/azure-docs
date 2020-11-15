@@ -23,6 +23,8 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 ### Install prerequisites
 Run PowerShell as Admin.
+
+Note: You should have TLS1.2 enabled on your machine to be able to get NuGet package provider using the following commands. See https://docs.microsoft.com/en-us/windows-server/security/tls/tls-registry-settings#tls-12
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process -Force
 Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
